@@ -1,7 +1,4 @@
 /** Sondos Ahmad Abbed
- * 1190652
- * A3 Dr. Youssef Hassuneh
- * Lab Wed.
  */
 //import java.text.SimpleDateFormat;
 import java.util.ArrayList;
