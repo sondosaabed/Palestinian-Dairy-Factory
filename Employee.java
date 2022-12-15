@@ -7,10 +7,6 @@ public class Employee {
 	protected Adress adress= new Adress(); 
 	protected double totalSalary;
 
-	public Employee() {
-		
-	}
-
 	public Employee(String name, String number, Date hireDate, Adress adress) {
 		this.name=name; 
 		setNumber(number);
@@ -23,9 +19,9 @@ public class Employee {
 	}
 	
 	public boolean isEmpNumberValid(String number) {
-		/**this method is to check if the Employee Number in the format XXX–L, 
-		 where: X is within the range 0–9 
-		 	  :L is within the range A–M*/
+		/**this method is to check if the Employee Number in the format XXXâ€“L, 
+		 where: X is within the range 0â€“9 
+		 	  :L is within the range Aâ€“M*/
 		boolean x =true;
 		if (number.contains("-")) {
 			//checks if Number contains "-"	 
@@ -37,12 +33,12 @@ public class Employee {
 				//checks x is with 3 digits
 				int format1 =Integer.parseInt(format01);//convert from String to int
 				if(format1>=0 && format1<=999) {
-					//checks if X is a digit within the range 0–9
+					//checks if X is a digit within the range 0â€“9
 					char[] format2= new char[1];
 					format2[0]= format02.charAt(0); 
 					
 					if((format2[0] >= 'A' && format2[0] <='M')) {
-						//checks if the char L is within the range A–M
+						//checks if the char L is within the range Aâ€“M
 						//using ASCII code
 					}
 					else x=false;
