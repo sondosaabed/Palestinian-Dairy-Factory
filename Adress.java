@@ -5,10 +5,6 @@ public class Adress {
 	protected String city;
 	protected String zipCode;
 	
-	public Adress(){
-		
-	}
-	
 	public Adress(String street, String state, String city, String zipCode) {
 		this.street=street;
 		this.state=state;
